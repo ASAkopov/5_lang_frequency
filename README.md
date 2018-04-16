@@ -1,6 +1,12 @@
 # Frequency Analysis of Words
 
-[TODO. There will be project description]
+The code returns 10 most frequent words in text file.
+
+'''python
+import lang_frequency.py
+'''
+
+
 
 # Project Goals
 
