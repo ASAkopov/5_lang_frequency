@@ -22,4 +22,4 @@ if __name__ == '__main__':
     words_num = 10
     text_file = input("Enter textfile path: ")
     text = load_data(text_file)
-    print(get_most_frequent_words(text))
+    print(get_most_frequent_words(text, words_num))
