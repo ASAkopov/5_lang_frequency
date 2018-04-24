@@ -1,11 +1,14 @@
 import re
+import chardet
 from collections import Counter
 from sys import argv, exit
 
 
 def load_data(filepath):
-    with open(filepath, 'r') as file:
-        return file.read()
+    with open(filepath, 'rb') as file:
+        bytes = file.read()
+        text_encoding = chardet.detect(bytes)['encoding']
+        return bytes.decode(text_encoding)
 
 
 def get_most_frequent_words(text_string, words_num):
