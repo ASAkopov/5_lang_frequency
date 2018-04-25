@@ -4,17 +4,26 @@ The module returns 10 most frequent words in a text file, in a descending order 
 
 Import module:
 ```python
-import lang_frequency
-```
-Load text from file:
-```python
-text = load_data(filepath):
-```
-Get 10 most frequent words:
-```python
-print(lang_frequency(text))
+import lang_frequency as lf
 ```
 
+### Using module functions in interactive regime:
+Load text from file:
+```python
+text = lf.load_data(wp1.txt):
+```
+Get 10 most frequent words from loaded text string:
+```python
+print(lf.get_most_frequent_words(text, 10))
+
+[('и', 137), ('в', 121), ('на', 72), ('с', 64), ('не', 64), ('что', 44), ('из', 35), ('его', 34), ('о', 32), ('то', 31)]
+```
+###Using module from command line:
+```python
+python3 lang_frequency.py wp1.txt 10
+
+[('и', 137), ('в', 121), ('на', 72), ('с', 64), ('не', 64), ('что', 44), ('из', 35), ('его', 34), ('о', 32), ('то', 31)]
+```
 
 # Project Goals
 
