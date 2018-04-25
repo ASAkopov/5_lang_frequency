@@ -12,7 +12,7 @@ Load text from file into a string:
 ```python
 text = lf.load_data(wp1.txt):
 ```
-Get 10 most frequent words from loaded text string:
+Print 10 most frequent words from loaded text string:
 ```python
 print(lf.get_most_frequent_words(text, 10))
 
